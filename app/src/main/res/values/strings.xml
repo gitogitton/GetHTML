@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">GetHTML</string>
+    <string name="url_string">Hello my friend !</string>
+</resources>

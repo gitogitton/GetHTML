@@ -1,0 +1,24 @@
+●　yahoo ClientID（アプリケーションID）
+dj00aiZpPU5hNXkwb1BVV3ZubSZzPWNvbnN1bWVyc2VjcmV0Jng9YzM-
+
+●　リクエストURL
+JSON	https://job.yahooapis.jp/v1/furusato/jobinfo/
+
+
+
+1)　ActivityからIntentService起動
+
+2)　
+
+
+
+●　コンテキスト
+getApplicationContext()
+getBaseContext()
+getContext()
+this
+
+
+●　XML形式とJSON形式
+
+
