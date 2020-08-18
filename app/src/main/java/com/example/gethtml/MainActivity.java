@@ -13,9 +13,6 @@ public class MainActivity extends AppCompatActivity {
     IntentFilter intentFilter;
     MyBroadcastReceiver receiver;
 
-    static private String mArticleTitle[];
-    static private int mArticleNum;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

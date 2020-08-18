@@ -23,7 +23,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
 */
         int data = bundle.getInt("total_num" );
         int count = bundle.getInt("count_num" );
-        String title[] = bundle.getStringArray( "title_data" );
+        String[] title = bundle.getStringArray( "title_data" );
         String jsonData = bundle.getString( "url_data" );
 
         Toast.makeText(
@@ -34,7 +34,7 @@ public class MyBroadcastReceiver extends BroadcastReceiver {
         //MainActivityへHTMLの内容を表示する
         TextView textView = ( (Activity)context ).findViewById( R.id.textView );
 //        textView.setText( data );
-        String str = String.valueOf( count ) + " / " + String.valueOf( data );
+        String str = count + " / " + data;
         textView.setText( str );
 
         str = title[0]

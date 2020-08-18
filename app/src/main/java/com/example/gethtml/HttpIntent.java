@@ -14,7 +14,6 @@ import org.xmlpull.v1.XmlPullParserException;
 import org.xmlpull.v1.XmlPullParserFactory;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
 import java.net.URL;
@@ -30,7 +29,7 @@ public class HttpIntent extends IntentService {
 
     private int mArticleTotalNum;
     private int mArticleNum;
-    private String mArticleTitle[];
+    private String[] mArticleTitle;
 //    private static InputStream stream;
 
     @Override
@@ -111,7 +110,7 @@ public class HttpIntent extends IntentService {
 
             // (3)データの取得
             StringBuilder data = new StringBuilder();
-            String tmp = "";
+            String tmp;
             while ((tmp = bufferedReader.readLine()) != null) {
                 data.append( tmp );
             }
